@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RODÁ PLAY — Todos los juegos de Rodá, en un solo lugar</title>
+<meta name="description" content="RODÁ PLAY es el hub oficial de juegos de Rodá. Elegí un juego y jugá.">
+
+<!-- Google Fonts: League Spartan (títulos) + Montserrat (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ FONDO DE RUTA (decorativo, fijo) ============ -->
+<div class="road-backdrop" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="RODÁ PLAY — inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="assets/logo.png" alt="" onerror="handleLogoError(this)">
+      </span>
+      <span class="brand-word">RODÁ <em>PLAY</em></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#juegos">Juegos</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow" data-reveal>Rodá: más que un carrito</p>
+      <h1 class="hero-title" data-reveal>
+        RODÁ<span class="hero-title-sub">PLAY</span>
+      </h1>
+      <p class="hero-sub" data-reveal>Todos los juegos de Rodá, en un solo lugar.</p>
+      <p class="hero-tag" data-reveal>Dejá de scrollear, empezá a jugar.</p>
+      <a href="#juegos" class="btn btn-primary hero-cta" data-reveal>
+        Ver los juegos
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9h10M9 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <!-- Camino animado: la firma visual de la página -->
+  </section>
+
+  <!-- ============ JUEGOS ============ -->
+  <section class="games" id="juegos">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow eyebrow-dark">4 juegos disponibles</p>
+        <h2 class="section-title">Elegí tu juego</h2>
+      </div>
+
+      <div class="games-grid" id="gamesGrid" role="list">
+        <!-- Las tarjetas se generan desde script.js a partir de la config GAMES -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark" aria-hidden="true">
+        <img src="assets/logo.png" alt="" onerror="handleLogoError(this)">
+      </span>
+      <div>
+        <span class="brand-word footer-word">RODÁ PLAY</span>
+        <p>Todos los juegos de Rodá, en un solo lugar.</p>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 Rodá</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
