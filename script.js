@@ -41,7 +41,7 @@ const GAMES = [
   },
   {
     id: "roda-run",
-    name: "Rodá Run",
+    name: "Súper Rodá Run",
     description: "Corré, saltá y superá todos los obstáculos.",
     image: "assets/games/roda-run.png",
     tag: "NUEVO",
