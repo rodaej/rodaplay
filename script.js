@@ -129,7 +129,7 @@ function initNavToggle() {
 }
 
 
-const API_URL = "https://magicloops.dev/api/loop/6516b161-6cab-4b64-b7c8-6bdcd7451f7c/run";
+const API_URL = "https://magicloops.dev/api/loop/201c3f67-355c-4556-af2a-a24dc3af23b3/run?";
 
 fetch(API_URL, {
   method: "POST",
